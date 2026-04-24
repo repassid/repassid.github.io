@@ -1,5 +1,160 @@
 <!DOCTYPE html>
-<html>
-<head><title>Repass.id</title></head>
-<body><h1>🚀 Repass.id is loading...</h1></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Repass.id — Your reputation, portable</title>
+  <meta name="description" content="Переносимые достижения и верифицируемая репутация. Скоро."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🔑</text></svg>">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #3b82f6;
+      --gradient: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--card);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      border: 1px solid #334155;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .badge::before {
+      content: "🚧";
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: -0.03em;
+    }
+    p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.5rem;
+      background: var(--gradient);
+      color: white;
+      text-decoration: none;
+      border-radius: 0.75rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+      margin-bottom: 1rem;
+    }
+    .cta:hover {
+      opacity: 0.9;
+    }
+    .cta:active {
+      transform: scale(0.98);
+    }
+    .note {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-bottom: 0;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #334155;
+      color: #64748b;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    /* Анимация появления */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(1rem); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      animation: fadeIn 0.4s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Repass<span>.id</span></div>
+    
+    <div class="badge">In development</div>
+    
+    <h1>Your reputation, portable.</h1>
+    
+    <p>
+      Переносите достижения, бейджи и репутацию между сервисами.<br>
+      Единый профиль. Верифицируемые доказательства. Полный контроль.
+    </p>
+    
+    <a href="https://github.com/repassid" target="_blank" rel="noopener" class="cta">
+      <span>★</span> Watch on GitHub
+    </a>
+    
+    <p class="note">Следите за прогрессом в репозитории</p>
+    
+    <div class="footer">
+      <a href="https://github.com/repassid" target="_blank" rel="noopener">GitHub</a>
+      <span>·</span>
+      <a href="mailto:hello@repass.id">hello@repass.id</a>
+    </div>
+  </div>
+</body>
 </html>
